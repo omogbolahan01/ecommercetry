@@ -124,10 +124,14 @@ footer {
 .deliv-flex {
   display: flex;
   gap: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .deliver {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 25rem;
-  background-color: blue;
+  background-color: #fafafa;
 }
 .large-icon {
   font-size: 7rem;
@@ -155,10 +159,10 @@ footer {
   width: 100%;
 }
 
-.van-tile a {
+/* .van-tile a {
   color: #161616;
   text-decoration: none;
-}
+} */
 
 .catalogue-tile img {
   max-width: 100%;
@@ -169,6 +173,15 @@ footer {
 .catalogue-list-container button {
   margin-right: 20px;
   cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .catalogue-tile img {
+    /* max-width: 100%; */
+    border-radius: 10px;
+    width: 20rem;
+    height: 15rem;
+    object-fit: contain;
+  }
 }
 
 .catalogue-type {
@@ -195,7 +208,7 @@ footer {
   color: #ffead0;
 }
 
-.van-type.simple:hover,
+/* .van-type.simple:hover,
 .van-type.simple.selected {
   background-color: #e17654;
 }
@@ -225,12 +238,12 @@ footer {
 
 i[class*="van-type-"] {
   padding: 7px 14px;
-}
+} */
 
 .catalogue-detail-container {
   padding-inline: 27px;
 }
-
+/* 
 .van-detail-container .back-button {
   color: black;
   text-decoration: none;
@@ -277,4 +290,20 @@ i[class*="van-type-"] {
   background-color: #ff8c38;
   color: white;
   font-size: 1.125rem;
+} */
+/* Cart.css */
+.cart-view {
+  /* Define styles for the cart */
+  position: fixed;
+  top: 2.5rem;
+  right: 0; /* Initially hidden to the right */
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s ease-in-out;
+}
+
+.cart.open {
+  /* Show the cart when 'open' class is applied */
+  right: 0;
 }

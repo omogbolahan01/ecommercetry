@@ -19,7 +19,7 @@ createServer({
     server.create("catalogue", {
       id: "2",
       name: "Apple iphone 15 Pro Max 256GB Dual Sim",
-      price: "1,960,000.00",
+      price: "1960000.0",
       description:
         "Say hello to your future tech obsession: the iphone 15 Pro Max!.The iphone 15 Pro Max is here, pushing the boundaries of innovation and promising to elevate your smartphone journey to unprecedented heights. It's not just a phone; it's a lifestyle enhancement. Let's delve into what sets the iphone 15 Pro Max apart as the ultimate must-have in the world of technology.Experience the future of visual technology with the iphone 15 Pro Max and its impressive 6.7-inch display, providing a generous 110.2 square centimeters of screen real estate. Featuring an exceptional screen-to-body ratio of approximately 89.8%, this device offers an immersive, edge-to-edge viewing experience. Whether you're indulging in multimedia, gaming, or productivity, the iphone 15 Pro Max's expansive and nearly bezel-less screen ensures your content shines with stunning clarity and vividness.Sim: Dual Sim ,Network: 5G,Camera: 48MP,Battery: 3274 mAh, Display: 6.7 inches,Operating System: iOS 17",
       imageUrl: "/images/apple15.webp",

@@ -10,26 +10,39 @@ export default function Header() {
     textDecoration: "underline",
     color: "#161616",
   };
+  // const { isCartVisible, toggleCartVisibility } = useCart();
+
+  // const handleClick = () => {
+  //   // Toggle the visibility of the cart overlay
+  //   toggleCartVisibility();
+  // };
   const { cart } = useCart();
-  const [isCartViewVisible, setCartViewVisible] = useState(false);
+  // const [isCartViewVisible, setCartViewVisible] = useState(false);
+  const { isCartVisible, toggleCartVisibility } = useCart();
 
-  const openCartView = () => {
-    console.log("Opening cart view");
-    setCartViewVisible(true);
-  };
+  // const openCartView = () => {
+  //   console.log("Opening cart view");
+  //   setCartViewVisible(true);
+  // };
 
-  const closeCartView = () => {
-    setCartViewVisible(false);
+  // const closeCartView = () => {
+  //   setCartViewVisible(false);
+  // };
+  const handleCartIconClick = () => {
+    toggleCartVisibility();
   };
 
   return (
     <header>
-      <Link className="site-logo" to="/">
-        GbdAfri
-      </Link>
+      <div className="site-logo">
+        <h2> GbdAfri</h2>
+      </div>
+      {/* <Link className="site-logo" to="/"> */}
+
+      {/* </Link> */}
       <nav>
         <NavLink
-          to="product"
+          to="/"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Product
@@ -40,11 +53,13 @@ export default function Header() {
         >
           Catalogue
         </NavLink>
-        <div onClick={openCartView} className="cart-icon">
+        <div onClick={handleCartIconClick} className="cart-icon">
           <BsCartCheck />
           <span className="cart-item-count">{cart.length}</span>
+          {isCartVisible && <CartView />}
+          {/* {isCartViewVisible && <CartView onClose={closeCartView} />} */}
         </div>
-        {isCartViewVisible && <CartView onClose={closeCartView} />}
+        {/* {isCartViewVisible && <CartView onClose={closeCartView} />} */}
       </nav>
     </header>
   );

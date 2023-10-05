@@ -21,7 +21,7 @@ export default function Catalogue() {
           {catalogues.type}
         </i>
       </Link>
-      <button class="add-to-cart-btn">Add to Cart</button>
+      {/* <button className="add-to-cart-btn">Add to Cart</button> */}
     </div>
   ));
 

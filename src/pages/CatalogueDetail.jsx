@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useCart } from "./CartContext";
 
 export default function CatalogueDetail() {
@@ -42,6 +42,10 @@ export default function CatalogueDetail() {
   };
   return (
     <div className="catalogue-detail-container">
+      <Link to="/catalogue" className="back-button">
+        &larr; <span>Back to all catalogue</span>
+      </Link>
+
       {catalogue ? (
         <div className="catalogue-detail">
           <img src={catalogue.imageUrl} />
