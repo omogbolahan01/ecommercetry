@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 export default function Catalogue() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [catalogues, setcatalogues] = useState([]);
+
+  const typeFilter = searchParams.get("type");
+
   useEffect(() => {
     fetch("/api/catalogues")
       .then((res) => res.json())
       .then((data) => setcatalogues(data.catalogues));
   }, []);
 
-  const catalogueElements = catalogues.map((catalogue) => (
+  const displayedCatalogues = typeFilter
+    ? catalogues.filter((catalogue) => catalogue.type === typeFilter)
+    : catalogues;
+  const catalogueElements = displayedCatalogues.map((catalogue) => (
     <div key={catalogues.id} className="catalogue-tile">
       <Link to={`/catalogues/${catalogue.id}`}>
         <img src={catalogue.imageUrl} />
@@ -28,6 +35,14 @@ export default function Catalogue() {
   return (
     <div className="catalogue-list-container">
       <h1>Explore our catalogues</h1>
+      <div className="catalogue-list-filter-buttons">
+        <button onClick={() => setSearchParams("?type=phone")}>Phone</button>
+        <button onClick={() => setSearchParams("?type=laptop")}>Laptop</button>
+        <button onClick={() => setSearchParams("?type=electronics")}>
+          Electronics
+        </button>
+        <button onClick={() => setSearchParams("")}>All</button>
+      </div>
       <div className="catalogue-list">{catalogueElements}</div>
     </div>
   );

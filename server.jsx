@@ -169,7 +169,7 @@ createServer({
       description:
         "With enough features to satisfy even the most tech-hungry consumers, THE HISENCE 43 iches LED FULL HD TV Smart TV is the complete package at a price point that won’t break the bank. Featuring Natural Colour Enhancer technology, it brings images to life, reflecting the true colors of all that you’re watching on screen. Hisense’s Clean View technology automatically analyses input signals and optimizes images to make them the best they can possibly be. Individual pixels are enhanced in real-time, delivering sharper, cleaner picture quality, no matter what you’re watching.Model: TV 43, 43 Inches TV, Smart TV, LED FULL HD TV,2 HDMI, 2 USB DIVX,1 AV , Color: Black, WI FI: Netflix, Free Bracket",
       imageUrl: "/images/hisense.png",
-      type: "Tv",
+      type: "electronics",
     });
     server.create("catalogue", {
       id: "19",
@@ -178,7 +178,7 @@ createServer({
       description:
         "The A4H comes loaded with more technology than some would expect in such a compact TV. The voice remote gives quick access to the built-in Google Assistant, opens the door to a vast library of content, as well as, gives the user voice control over TV functions. Motion Rate 120 ensures that content motion is smooth and distinct with less blurring. This feature is important for the TV’s game and sports modes which adjust the TV settings for the optimal viewing experience when playing the latest fast-paced games or watching fast-action sports content. The A4H also comes with DTS Virtual: X for a more robust audio experience. For the consumer in the market for a smaller size television that still packs a punch, look no further than the A4H.Type of TV,Smart TV: Yes, Android,Works with Alexa: Yes, Google Assistant built-in: Yes,App Store: Yes (Google Play App Store),Picture Quality,Screen resolution: 2K FHD, 1920 x 1080p,Local dimming: No, 4K upscaling: No,Motion Rate: 120,Display aspect ratio: 16:9,Backlight type: Full Array LED,Resolution type: 2K ,Wireless built-in: Yes, Bluetooth: Yes,HDMI: 2,Ethernet (LAN): Yes,USB: 2 (2.0),RF antenna: 1,Earphone/audio output: 1,HDMI ARC: Yes ",
       imageUrl: "/images/his2.jpg",
-      type: "Tv",
+      type: "electronics",
     });
     server.create("catalogue", {
       id: "20",
@@ -187,7 +187,7 @@ createServer({
       description:
         "Keep your food fresh with our stylish range of Nexus FreezersRanging from the Chest Freezer, Double door Refrigerator, Single door Refrigerator, Bottom Freezer Refrigerator and a host of others, Nexus freezers have long been a favourite in the homes of families across the world.Nexus, the leading provider of quality home appliances in Nigeria, is dedicated to ensuring you enjoy access to a premium range of chest freezers. Our products are designed for superior storage space, style and aesthetics, and most importantly to keep your food freshKey Features:  Interior Light:The refrigerator is equipped with an interior light that illuminates the inside of the fridge when the door is opened. This feature allows for better visibility and easy identification of items, even in low-light conditions.  Mechanical Temperature Control:The refrigerator utilizes a mechanical temperature control system, allowing you to manually adjust and set the desired temperature inside the fridge. This control mechanism enables you to customize the cooling conditions based on the type of food or beverages being stored.  Fast Freezing Function:The refrigerator features a fast freezing function that enables rapid freezing of food items. This function is especially useful when you need to quickly freeze perishable items or when you want to preserve the freshness and quality of the food. Easy to Clean Interior:The interior of the refrigerator is designed to be easy to clean. It may feature removable shelves, drawers, or compartments that can be easily taken out for cleaning. This design consideration allows for convenient maintenance and ensures a hygienic environment inside the fridge. Nexus is dedicated to filling homes across Nigeria with lifestyle enhancing household appliances. The difference between a house and a home is the experience and comfort you feel inside – we’re here to bridge the gap. We’ve spent years developing a host of world-class household appliances that cater to a wide range of individual preferences. From the kitchen to the laundry, every model is manufactured for functionality, style, convenience and most importantly, maintaining a comfortable home lifestyle.Part and parcel of our growing success has been our ability to assemble a team of highly qualified and like-minded individuals. They are focused on providing first-rate solutions for your home and surroundings. We take pride in putting your needs first, including your sense of style and budget. It has been a critical component, and is key to making us the leading choice for household appliances. ",
       imageUrl: "/images/fridge.jpg",
-      type: "Electronics",
+      type: "electronics",
     });
   },
 

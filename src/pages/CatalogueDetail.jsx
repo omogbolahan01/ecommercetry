@@ -49,9 +49,9 @@ export default function CatalogueDetail() {
       {catalogue ? (
         <div className="catalogue-detail">
           <img src={catalogue.imageUrl} />
-          <i className={`catalogue-type ${catalogue.type} selected`}>
+          {/* <i className={`catalogue-type ${catalogue.type} selected`}>
             {catalogue.type}
-          </i>
+          </i> */}
           <h2>{catalogue.name}</h2>
           <p className="catalogue-price">₦{catalogue.price}</p>
           {/* <div class="quantity-control">
