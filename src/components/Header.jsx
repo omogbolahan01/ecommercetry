@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BsCartCheck } from "react-icons/Bs";
+import { BsCartCheck } from "react-icons/bs";
 import { useCart } from "../pages/CartContext";
 import CartView from "../pages/CartView";
 
