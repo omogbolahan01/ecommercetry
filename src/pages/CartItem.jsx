@@ -1,6 +1,6 @@
 import React from "react";
 import { useCart } from "./CartContext";
-import { AiOutlineDelete } from "react-icons/Ai";
+import { AiOutlineDelete } from "react-icons/ai";
 
 const CartItem = ({ catalogue, onIncreaseQuantity, onRemoveItem }) => {
   const { addToCart, removeFromCart, removFromCart } = useCart();

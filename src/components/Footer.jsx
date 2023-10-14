@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BiLogoPlayStore } from "react-icons/Bi";
+import { BiLogoPlayStore } from "react-icons/bi";
 import {
   AiOutlineApple,
   AiFillTwitterCircle,
   AiOutlineYoutube,
   AiOutlineArrowRight,
-} from "react-icons/Ai";
+} from "react-icons/ai";
 
-import { BsFacebook, BsInstagram } from "react-icons/Bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
