@@ -84,15 +84,16 @@ const CartView = (catalogue) => {
         </table>
       )}
       <p>Total: ₦{calculateTotal()}</p>
-      <div>
+      <div className="cancel-btt">
         <button onClick={cancelCart}>Cancel Cart</button>
 
         <button onClick={toggleCartVisibility}>Hide Cart</button>
       </div>
-
-      <button className="checkout" onClick={checkout}>
-        Checkout
-      </button>
+      <div className="checkout">
+        <button className="check-btn" onClick={checkout}>
+          Checkout
+        </button>
+      </div>
     </div>
   );
 };

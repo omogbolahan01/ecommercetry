@@ -17,6 +17,13 @@ a {
 body::-webkit-scrollbar {
   display: none;
 }
+button {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  padding: 0.3rem;
+}
 body {
   overflow-x: hidden;
   -ms-overflow-style: none;
@@ -362,10 +369,23 @@ faq-pad h1 {
   padding-right: 5px;
 }
 .checkout {
-  margin-top: 70%;
+  margin-top: 60%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.cancel-btt {
+  display: flex;
+  gap: 1rem;
+}
+.check-btn {
+  width: 70%;
+  color: #fff;
+  background-color: black;
+  outline: none;
+  transition: 200ms all cubic-bezier(0.8, 0, 0.8, 1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .cart-flexi {
   display: flex;
