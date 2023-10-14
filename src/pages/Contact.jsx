@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function Contact() {
-
   return (
     <div className="contact-area">
       <div className="contactt">
@@ -20,13 +19,6 @@ export default function Contact() {
               For general inquiries, you can reach us at [insert email address]
               or call [insert phone number] during our office hours, [insert
               hours].
-            </p>
-          </div>
-          <div className="contact-donate">
-            <h3>Donate</h3>
-            <p>
-              To donate or partner with us, please contact our fundraising team
-              at [insert email address] or call [insert phone number].
             </p>
           </div>
         </div>
@@ -66,22 +58,6 @@ export default function Contact() {
           <button className="contact-send">send</button>
         </div>
       </div>
-
-      <div className="last-area">
-        <h3>
-          We invite you to join us in our mission to support OVCs and help them
-          achieve their dreams. Whether you want to volunteer your time, make a
-          donation, or become a partner organization, we welcome your support
-          and look forward to working together to make a positive impact in our
-          community.
-        </h3>
-        <Link to="/form?source=contact">
-          <button className="donate-btn">
-            <img src="/images/Frame 40.png" />
-          </button>
-        </Link>
-      </div>
-
     </div>
   );
 }
