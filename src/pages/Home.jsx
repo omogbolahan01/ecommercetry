@@ -1,8 +1,10 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
-import { CiLocationArrow1, CiDeliveryTruck } from "react-icons/ci";
-import { MdOutlineHomeRepairService } from "react-icons/md";
-import { FcCustomerSupport } from "react-icons/fc";
+import { CiLocationArrow1, CiDeliveryTruck } from "react-icons/Ci";
+import { MdOutlineHomeRepairService } from "react-icons/Md";
+import { FcCustomerSupport } from "react-icons/Fc";
+
 export default function Home() {
   return (
     <div className="home-product">

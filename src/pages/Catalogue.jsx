@@ -24,9 +24,6 @@ export default function Catalogue() {
           <h3>{catalogue.name}</h3>
           <p>₦{catalogue.price}</p>
         </div>
-        <i className={`van-type ${catalogue.type} selected`}>
-          {catalogues.type}
-        </i>
       </Link>
       {/* <button className="add-to-cart-btn">Add to Cart</button> */}
     </div>
@@ -36,12 +33,34 @@ export default function Catalogue() {
     <div className="catalogue-list-container">
       <h1>Explore our catalogues</h1>
       <div className="catalogue-list-filter-buttons">
-        <button onClick={() => setSearchParams("?type=phone")}>Phone</button>
-        <button onClick={() => setSearchParams("?type=laptop")}>Laptop</button>
-        <button onClick={() => setSearchParams("?type=electronics")}>
+        <button
+          onClick={() => setSearchParams("?type=phone")}
+          className={`catalogue-type phone 
+        ${typeFilter === "phone" ? "selected" : ""}`}
+        >
+          Phone
+        </button>
+        <button
+          onClick={() => setSearchParams("?type=laptop")}
+          className={`catalogue-type laptop 
+          ${typeFilter === "laptop" ? "selected" : ""}`}
+        >
+          Laptop
+        </button>
+        <button
+          onClick={() => setSearchParams("?type=electronics")}
+          className={`catalogue-type electronics 
+          ${typeFilter === "electronics" ? "selected" : ""}`}
+        >
           Electronics
         </button>
-        <button onClick={() => setSearchParams("")}>All</button>
+        <button
+          onClick={() => setSearchParams("")}
+          className={`catalogue-type  
+          ${typeFilter === "" ? "selected" : ""}`}
+        >
+          All
+        </button>
       </div>
       <div className="catalogue-list">{catalogueElements}</div>
     </div>

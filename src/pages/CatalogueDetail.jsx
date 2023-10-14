@@ -49,20 +49,9 @@ export default function CatalogueDetail() {
       {catalogue ? (
         <div className="catalogue-detail">
           <img src={catalogue.imageUrl} />
-          {/* <i className={`catalogue-type ${catalogue.type} selected`}>
-            {catalogue.type}
-          </i> */}
           <h2>{catalogue.name}</h2>
           <p className="catalogue-price">₦{catalogue.price}</p>
-          {/* <div class="quantity-control">
-            <button onClick={decrementQuantity} class="decrement-quantity">
-              -
-            </button>
-            <span class="quantity">{quantity}</span>
-            <button onClick={incrementQuantity} class="increment-quantity">
-              +
-            </button>
-          </div> */}
+
           <button onClick={handleAddToCart} className="add-to-cart-btn">
             Add to Cart
           </button>

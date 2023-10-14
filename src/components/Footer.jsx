@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { BiLogoPlayStore } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import { BiLogoPlayStore } from "react-icons/Bi";
 import {
   AiOutlineApple,
   AiFillTwitterCircle,
   AiOutlineYoutube,
   AiOutlineArrowRight,
-} from "react-icons/ai";
+} from "react-icons/Ai";
 
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/Bs";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -27,30 +28,30 @@ export default function Footer() {
             <input
               type="email"
               value={email}
+              className="form-sub"
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </label>
-          <button type="submit">
-            {" "}
+          <button className="form-btn" type="submit">
             <AiOutlineArrowRight />
           </button>
         </form>
       </div>
 
       <div className="footer-flex">
-        <div>category</div>
-        <div>contact</div>
-        <div>Terms and condition</div>
-        <div>FAQs</div>
+        <Link to="catalogue">Catalogue</Link>
+        <Link to="contact">Contact</Link>
+        <Link to="faqs">FAQs</Link>
+        <Link to="terms">Terms and condition</Link>
       </div>
       <div className="footer-download">
         <h3>Download App</h3>
         <div className="download-button">
-          <button>
+          <button className="btn-download">
             <BiLogoPlayStore /> <p>Download from Playstore</p>
           </button>
-          <button>
+          <button className="btn-download">
             <AiOutlineApple /> <p>Download from Appstore</p>
           </button>
         </div>
