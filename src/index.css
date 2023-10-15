@@ -387,6 +387,9 @@ faq-pad h1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.form-area {
+  margin-bottom: 1rem;
+}
 .cart-flexi {
   display: flex;
   margin-right: 100px;

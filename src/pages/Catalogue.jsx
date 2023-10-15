@@ -4,6 +4,10 @@ import { Link, useSearchParams } from "react-router-dom";
 export default function Catalogue() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [catalogues, setcatalogues] = useState([]);
+  // const [catalogue, setCatalogue] = useState([]);
+  // const [filteredCatalogue, setFilteredCatalogue] = useState([]);
+
+  const [searchQuery, setSearchQuery] = useState("");
 
   const typeFilter = searchParams.get("type");
 
@@ -16,7 +20,10 @@ export default function Catalogue() {
   const displayedCatalogues = typeFilter
     ? catalogues.filter((catalogue) => catalogue.type === typeFilter)
     : catalogues;
-  const catalogueElements = displayedCatalogues.map((catalogue) => (
+  const filteredCatalogues = displayedCatalogues.filter((catalogue) =>
+    catalogue.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  const catalogueElements = filteredCatalogues.map((catalogue) => (
     <div key={catalogues.id} className="catalogue-tile">
       <Link to={`/catalogues/${catalogue.id}`}>
         <img src={catalogue.imageUrl} />
@@ -32,6 +39,13 @@ export default function Catalogue() {
   return (
     <div className="catalogue-list-container">
       <h1>Explore our catalogues</h1>
+      <input
+        type="text"
+        placeholder="Search catalog..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="form-area"
+      />
       <div className="catalogue-list-filter-buttons">
         <button
           onClick={() => setSearchParams("?type=phone")}
