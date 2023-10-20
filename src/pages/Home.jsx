@@ -17,9 +17,9 @@ export default function Home() {
           <p>All phones,laptops and electronics devices </p>
         </div>
         <div className="cata-flex">
-          <img src="/images/ban2.jpg" />
-          <img src="/images/banner.jpg" />
-          <img src="/images/electronics.webp" />
+          <img className="cata1" src="/images/ban2.jpg" />
+          <img className="cata1" src="/images/banner.jpg" />
+          <img className="cata1" src="/images/electronics.webp" />
         </div>
       </div>
       <div className="deliv-flex">

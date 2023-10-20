@@ -21,6 +21,13 @@ export default function Contact() {
               hours].
             </p>
           </div>
+          <div className="contact-donate">
+            <h3>Donate</h3>
+            <p>
+              To donate or partner with us, please contact our fundraising team
+              at [insert email address] or call [insert phone number].
+            </p>
+          </div>
         </div>
         <div className="contact-formarea">
           <p>

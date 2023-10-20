@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BiLogoPlayStore } from "react-icons/bi";
+import { BiLogoPlayStore } from "react-icons/Bi";
 import {
   AiOutlineApple,
   AiFillTwitterCircle,
   AiOutlineYoutube,
   AiOutlineArrowRight,
-} from "react-icons/ai";
+} from "react-icons/Ai";
 
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/Bs";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -41,7 +41,7 @@ export default function Footer() {
 
       <div className="footer-flex">
         <Link to="catalogue">Catalogue</Link>
-        <Link to="contact">Contact</Link>
+        {/* <Link to="contact">Contact</Link> */}
         <Link to="faqs">FAQs</Link>
         <Link to="terms">Terms and condition</Link>
       </div>

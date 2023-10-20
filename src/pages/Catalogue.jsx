@@ -28,7 +28,7 @@ export default function Catalogue() {
       <Link to={`/catalogues/${catalogue.id}`}>
         <img src={catalogue.imageUrl} />
         <div className="catalogue-info">
-          <h3>{catalogue.name}</h3>
+          <h3 className="catalogue-name">{catalogue.name}</h3>
           <p>₦{catalogue.price}</p>
         </div>
       </Link>

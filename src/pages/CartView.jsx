@@ -52,11 +52,11 @@ const CartView = (catalogue) => {
       {isCartVisible && (
         <table>
           <thead>
-            <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Actions</th>
+            <tr className="productss">
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
