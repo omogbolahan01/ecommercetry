@@ -8,7 +8,6 @@ const CartView = (catalogue) => {
     useCart();
   const [isCartVisible, setCartVisibility] = useState(true);
   const handleClickInsideCart = (e) => {
-    // Prevent the click event from propagating to parent elements
     e.stopPropagation();
   };
 
