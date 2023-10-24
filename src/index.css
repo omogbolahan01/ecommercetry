@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=inter:wght@400;600;800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,7 +8,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+
+  font-family: inter;
 }
 
 a {
@@ -215,7 +217,7 @@ footer {
     object-fit: contain;
   }
 }
-faq-pad h1 {
+.faq-pad h1 {
   font-family: Manrope;
   font-size: 1.7rem;
   font-weight: 800;
@@ -369,7 +371,7 @@ faq-pad h1 {
   padding-right: 5px;
 }
 .checkout {
-  margin-top: 50%;
+  margin-top: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -380,6 +382,7 @@ faq-pad h1 {
 }
 .check-btn {
   width: 50%;
+  margin-bottom: 25%;
   color: #fff;
   background-color: black;
   outline: none;
@@ -397,9 +400,15 @@ faq-pad h1 {
 .productss {
   display: flex;
 }
-
+.product {
+  /* width: 50%; */
+}
+.price {
+  /* width: 20%; */
+}
 .action {
-  /* width: 5%; */
+  /* width: 15%; */
+  /* margin-left: 2rem; */
   margin-left: 3rem;
   margin-top: 0.7rem;
 }
@@ -430,7 +439,7 @@ faq-pad h1 {
 .cart-flexi p {
   padding-right: 20px;
 }
-/* Cart.css */
+/* Cart.css
 .cart-view {
   position: fixed;
   top: 2.8rem;
@@ -439,7 +448,7 @@ faq-pad h1 {
   height: 100%;
   background-color: white;
   transition: right 0.3s ease-in-out;
-}
+} */
 .catalogue-detail p {
   padding-right: 8rem;
 }
@@ -541,6 +550,21 @@ faq-pad h1 {
   }
   .catalogue-detail img {
     width: 75%;
+  }
+  .faq-background h2 {
+    padding: 5rem 2.5rem;
+  }
+  .faq-pad {
+    padding: 3rem 2.5rem;
+  }
+  .faq-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 300px) {

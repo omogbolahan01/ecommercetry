@@ -48,41 +48,43 @@ const CartView = (catalogue) => {
   return (
     <div className="cart-view" onClick={handleClickInsideCart}>
       <h2>Cart</h2>
-      {isCartVisible && (
-        <table>
-          <thead>
-            <tr className="productss">
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {cart.map((catalogue) => (
-              <CartItem
-                key={catalogue.id}
-                catalogue={catalogue}
-                onIncreaseQuantity={increaseQuantity}
-                // onRemoveItem={removFromCart}
-              />
-            ))}
-          </tbody>
-
-          {/* <button onClick={() => removeFromCart(catalogue.id)}>Remove</button> */}
-        </table>
+      {cart.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <>
+          {isCartVisible && (
+            <table>
+              <thead>
+                <tr className="productss">
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {cart.map((catalogue) => (
+                  <CartItem
+                    key={catalogue.id}
+                    catalogue={catalogue}
+                    onIncreaseQuantity={increaseQuantity}
+                  />
+                ))}
+              </tbody>
+            </table>
+          )}
+          <p>Total: ₦{calculateTotal()}</p>
+          <div className="cancel-btt">
+            <button onClick={cancelCart}>Cancel Cart</button>
+            <button onClick={toggleCartVisibility}>Hide Cart</button>
+          </div>
+          <div className="checkout">
+            <button className="check-btn" onClick={checkout}>
+              Checkout
+            </button>
+          </div>
+        </>
       )}
-      <p>Total: ₦{calculateTotal()}</p>
-      <div className="cancel-btt">
-        <button onClick={cancelCart}>Cancel Cart</button>
-
-        <button onClick={toggleCartVisibility}>Hide Cart</button>
-      </div>
-      <div className="checkout">
-        <button className="check-btn" onClick={checkout}>
-          Checkout
-        </button>
-      </div>
     </div>
   );
 };

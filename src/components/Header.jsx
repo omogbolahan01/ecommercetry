@@ -53,12 +53,17 @@ export default function Header() {
         >
           Catalogue
         </NavLink>
-        <div onClick={handleCartIconClick} className="cart-icon">
+        <NavLink
+          to="cart"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
           <BsCartCheck />
           <span className="cart-item-count">{cart.length}</span>
           {isCartVisible && <CartView />}
-          {/* {isCartViewVisible && <CartView onClose={closeCartView} />} */}
-        </div>
+        </NavLink>
+
+        {/* {isCartViewVisible && <CartView onClose={closeCartView} />} */}
+
         {/* {isCartViewVisible && <CartView onClose={closeCartView} />} */}
       </nav>
     </header>
