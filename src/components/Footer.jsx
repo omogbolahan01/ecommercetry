@@ -49,10 +49,12 @@ export default function Footer() {
         <h3>Download App</h3>
         <div className="download-button">
           <button className="btn-download">
-            <BiLogoPlayStore /> <p>Download from Playstore</p>
+            <BiLogoPlayStore className="large-icon2" />{" "}
+            <p>Download from Playstore</p>
           </button>
           <button className="btn-download">
-            <AiOutlineApple /> <p>Download from Appstore</p>
+            <AiOutlineApple className="large-icon2" />{" "}
+            <p>Download from Appstore</p>
           </button>
         </div>
       </div>

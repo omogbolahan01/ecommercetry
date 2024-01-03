@@ -1,9 +1,17 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { CiLocationArrow1, CiDeliveryTruck } from "react-icons/ci";
-import { MdOutlineHomeRepairService } from "react-icons/md";
-import { FcCustomerSupport } from "react-icons/fc";
+
+import {
+  CiLocationArrow1,
+  CiDeliveryTruck,
+  CiCircleQuestion,
+} from "react-icons/ci";
+// import { IoIosHelpCircleOutline } from "react-icons/io";
+// import { GiAutoRepair } from "react-icons/gi";
+// import { TiSpannerOutline } from "react-icons/ti";
+// import { GrHostMaintenance } from "react-icons/gr";
+import { VscWorkspaceUnknown } from "react-icons/vsc";
 
 export default function Home() {
   return (
@@ -17,9 +25,15 @@ export default function Home() {
           <p>All phones,laptops and electronics devices </p>
         </div>
         <div className="cata-flex">
-          <img className="cata1" src="/images/ban2.jpg" />
-          <img className="cata1" src="/images/banner.jpg" />
-          <img className="cata1" src="/images/electronics.webp" />
+          <div className="cata1">
+            <img src="/images/ban2.jpg" />
+          </div>
+          <div className="cata1">
+            <img src="/images/banner.jpg" />
+          </div>
+          <div className="cata1">
+            <img src="/images/electronics.webp" />
+          </div>
         </div>
       </div>
       <div className="deliv-flex">
@@ -31,7 +45,7 @@ export default function Home() {
           </p>
         </div>
         <div className="deliver">
-          <MdOutlineHomeRepairService className="large-icon" />
+          <VscWorkspaceUnknown className="large-icon" />
           <h3>Repairs</h3>
           <p>
             Sometimes bad things happen to great products. But that doesn’t mean
@@ -39,9 +53,12 @@ export default function Home() {
           </p>
         </div>
         <div className="deliver">
-          <FcCustomerSupport className="large-icon" />
+          <CiCircleQuestion className="large-icon" />
           <h3>24/7 Help Center</h3>
-          <p>Dedicated online and offline support</p>
+          <p>
+            Dedicated online and offline support.we are dedicated in helping you
+            get whatever issues solved{" "}
+          </p>
         </div>
         <div className="deliver">
           <CiLocationArrow1 className="large-icon" />

@@ -48,14 +48,19 @@ export default function CatalogueDetail() {
 
       {catalogue ? (
         <div className="catalogue-detail">
-          <img src={catalogue.imageUrl} />
-          <h2>{catalogue.name}</h2>
-          <p className="catalogue-price">₦{catalogue.price}</p>
-
-          <button onClick={handleAddToCart} className="add-to-cart-btn">
-            Add to Cart
-          </button>
-          <p>{catalogue.description}</p>
+          <div>
+            {" "}
+            <img src={catalogue.imageUrl} />
+            <h2>{catalogue.name}</h2>
+            <p className="catalogue-price">₦{catalogue.price}</p>
+            <button onClick={handleAddToCart} className="add-to-cart-btn">
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            {" "}
+            <p>{catalogue.description}</p>
+          </div>
         </div>
       ) : (
         <h2>Loading...</h2>

@@ -125,6 +125,8 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 .cata-flex {
   display: flex;
@@ -132,6 +134,13 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.cata1 {
+  width: 30%;
+}
+.cata1 img {
+  width: 100%;
+  object-fit: contain;
 }
 .deliv-flex {
   display: flex;
@@ -145,25 +154,22 @@ footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 25rem;
+  height: 20rem;
   background-color: #fafafa;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
 }
 .large-icon {
   font-size: 7rem;
+}
+.large-icon2 {
+  font-size: 2.5rem;
 }
 .catalogue-list-container {
   padding-inline: 17px;
   width: 100%;
 }
-
-/* .van-list-filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.van-list-filter-buttons > a {
-  margin-right: 15px;
-} */
 
 .catalogue-list {
   display: grid;
@@ -173,11 +179,6 @@ footer {
 
   width: 100%;
 }
-
-/* .van-tile a {
-  color: #161616;
-  text-decoration: none;
-} */
 
 .catalogue-tile img {
   max-width: 100%;
@@ -311,13 +312,15 @@ footer {
   border: none;
   border-radius: 5px;
   background-color: #000000;
-  color: #4d4d4d;
+  color: #ffffff;
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 3px;
 }
 
 .catalogue-type:hover {
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .catalogue-type:focus {
@@ -325,13 +328,18 @@ footer {
 }
 
 .catalogue-type.selected {
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .catalologue-type.phone:hover,
 .catalogue-type.phone.selected {
-  background-color: #000000;
-  color: #fafafa;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  /* background-color: #000000;
+  color: #fafafa; */
 }
 
 .catalogue-detail-container {
@@ -348,6 +356,10 @@ footer {
 
 .catalogue-detail-container .back-button span {
   text-decoration: underline;
+}
+.catalogue-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .cart-top {
   display: flex;
@@ -484,7 +496,7 @@ footer {
     padding-right: 2rem;
   }
   .cata1 {
-    width: 12rem;
+    /* width: 12rem; */
   }
   .deliver {
     width: 35rem;
@@ -521,6 +533,10 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0rem;
+  }
+  .catalogue-detail {
+    display: flex;
+    flex-direction: column;
   }
   .deliver {
     width: 75%;
