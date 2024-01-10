@@ -528,6 +528,12 @@ footer {
   .cata-flex img {
     width: 85%;
   }
+  .cata1 {
+    width: 100%;
+  }
+  .cata1 img {
+    width: 100%;
+  }
   .deliv-flex {
     flex-direction: column;
     justify-content: center;

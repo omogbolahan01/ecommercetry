@@ -14,6 +14,7 @@ export default function Footer() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
+    B;
     e.preventDefault();
     window.location.href = `mailto:iloriojomodel@gmail.com?subject=Newsletter Subscription&body=Email: ${email}`;
   };
